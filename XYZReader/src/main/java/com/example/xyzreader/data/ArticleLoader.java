@@ -32,9 +32,7 @@ public class ArticleLoader extends CursorLoader {
                 ItemsContract.Items.TITLE,
                 ItemsContract.Items.PUBLISHED_DATE,
                 ItemsContract.Items.AUTHOR,
-                ItemsContract.Items.THUMB_URL,
                 ItemsContract.Items.PHOTO_URL,
-                ItemsContract.Items.ASPECT_RATIO,
                 ItemsContract.Items.BODY,
         };
 
@@ -42,9 +40,7 @@ public class ArticleLoader extends CursorLoader {
         int TITLE = 1;
         int PUBLISHED_DATE = 2;
         int AUTHOR = 3;
-        int THUMB_URL = 4;
-        int PHOTO_URL = 5;
-        int ASPECT_RATIO = 6;
-        int BODY = 7;
+        int PHOTO_URL = 4;
+        int BODY = 5;
     }
 }

@@ -10,7 +10,7 @@ public class ItemsDatabase extends SQLiteOpenHelper {
 // ------------------------------ FIELDS ------------------------------
 
     private static final String DATABASE_NAME = "xyzreader.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
 // --------------------------- CONSTRUCTORS ---------------------------
 
@@ -28,9 +28,7 @@ public class ItemsDatabase extends SQLiteOpenHelper {
                 + ItemsContract.ItemsColumns.TITLE + " TEXT NOT NULL,"
                 + ItemsContract.ItemsColumns.AUTHOR + " TEXT NOT NULL,"
                 + ItemsContract.ItemsColumns.BODY + " TEXT NOT NULL,"
-                + ItemsContract.ItemsColumns.THUMB_URL + " TEXT NOT NULL,"
                 + ItemsContract.ItemsColumns.PHOTO_URL + " TEXT NOT NULL,"
-                + ItemsContract.ItemsColumns.ASPECT_RATIO + " REAL NOT NULL DEFAULT 1.5,"
                 + ItemsContract.ItemsColumns.PUBLISHED_DATE + " INTEGER NOT NULL DEFAULT 0"
                 + ")");
     }
