@@ -3,7 +3,7 @@ package com.example.xyzreader.util;
 import android.database.Cursor;
 import android.text.format.DateUtils;
 import com.example.xyzreader.data.ArticleLoader;
-import com.example.xyzreader.model.Article;
+import com.example.xyzreader.remote.Article;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,18 +29,6 @@ public class ArticleUtil {
 
         // now return the values
         return matches;
-    }
-
-    public static String getByLine(Article article) {
-        return DateUtils.getRelativeTimeSpanString(
-                article.publishedDate.getTime(),
-                System.currentTimeMillis(),
-                DateUtils.HOUR_IN_MILLIS,
-                DateUtils.FORMAT_ABBREV_ALL)
-                .toString()
-                + " by <font color='#ffffff'>"
-                + article.author
-                + "</font>";
     }
 
     public static String getSubtitle(Article article) {

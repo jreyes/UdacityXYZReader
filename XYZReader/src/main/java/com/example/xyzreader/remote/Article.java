@@ -1,4 +1,4 @@
-package com.example.xyzreader.model;
+package com.example.xyzreader.remote;
 
 import android.os.Parcel;
 import android.os.Parcelable;

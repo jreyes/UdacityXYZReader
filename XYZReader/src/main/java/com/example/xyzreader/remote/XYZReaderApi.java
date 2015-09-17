@@ -1,6 +1,5 @@
 package com.example.xyzreader.remote;
 
-import com.example.xyzreader.model.Article;
 import com.example.xyzreader.util.JsonUtil;
 import com.google.gson.*;
 import com.squareup.okhttp.OkHttpClient;

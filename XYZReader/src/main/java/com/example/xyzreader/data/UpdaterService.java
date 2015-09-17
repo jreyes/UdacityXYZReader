@@ -11,7 +11,7 @@ import android.net.Uri;
 import android.os.RemoteException;
 import android.util.Log;
 import com.example.xyzreader.XYZReaderApplication;
-import com.example.xyzreader.model.Article;
+import com.example.xyzreader.remote.Article;
 
 import java.util.ArrayList;
 

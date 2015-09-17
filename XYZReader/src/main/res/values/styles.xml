@@ -17,8 +17,37 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Bacon" parent="Base.Theme.Bacon" />
+
+    <style name="Base.Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
+        <item name="colorAccent">@color/theme_accent</item>
+    </style>
+
+    <style name="AspectRatioImageView" parent="AspectRatioImageView.Base" />
+
+    <style name="AspectRatioImageView.Base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="aspectRatio">0.56</item>
+        <item name="layout_collapseMode">parallax</item>
+    </style>
+
+    <style name="CollapsingToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="contentScrim">?attr/colorPrimary</item>
+        <item name="expandedTitleMarginEnd">@dimen/title_margin</item>
+        <item name="expandedTitleMarginStart">@dimen/title_margin_start</item>
+        <item name="expandedTitleTextAppearance">@style/CollapsingToolbar.TextAppearance.Expanded
+        </item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+    </style>
+
+    <style name="CollapsingToolbar.TextAppearance.Expanded" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@android:color/transparent</item>
     </style>
 
 </resources>

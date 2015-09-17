@@ -1,11 +1,13 @@
 <resources>
     <!-- detail -->
-    <dimen name="detail_title_text_size">32sp</dimen>
-    <dimen name="detail_body_text_size">22sp</dimen>
-    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
+    <dimen name="title_margin">16dp</dimen>
+    <dimen name="title_margin_start">48dp</dimen>
 
-    <dimen name="fab_elevation">2dp</dimen>
-    <dimen name="fab_press_translation_z">6dp</dimen>
+    <dimen name="list_side_margin">16dp</dimen>
+
+    <dimen name="header_padding_sides">16dp</dimen>
+    <dimen name="header_padding_spacer">24dp</dimen>
+
     <dimen name="fab_margin">24dp</dimen>
 
 </resources>

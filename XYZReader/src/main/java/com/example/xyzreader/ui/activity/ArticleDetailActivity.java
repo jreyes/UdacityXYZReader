@@ -3,9 +3,8 @@ package com.example.xyzreader.ui.activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-
 import com.example.xyzreader.R;
-import com.example.xyzreader.model.Article;
+import com.example.xyzreader.remote.Article;
 import com.example.xyzreader.ui.adapter.ArticleDetailAdapter;
 
 import java.util.ArrayList;
@@ -20,6 +19,13 @@ public class ArticleDetailActivity extends AppCompatActivity {
 
     private ArrayList<Article> mArticles;
     private int mSelectedIndex;
+
+// -------------------------- OTHER METHODS --------------------------
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +45,7 @@ public class ArticleDetailActivity extends AppCompatActivity {
         mArticles = getArticles(getIntent().getExtras());
         mSelectedIndex = getSelectedIndex(getIntent().getExtras());
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         viewPager.setOffscreenPageLimit(mArticles.size());
         viewPager.setAdapter(new ArticleDetailAdapter(getSupportFragmentManager(), mArticles));
         viewPager.setCurrentItem(mSelectedIndex);

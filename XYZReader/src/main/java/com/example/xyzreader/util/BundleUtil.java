@@ -1,8 +1,7 @@
 package com.example.xyzreader.util;
 
 import android.os.Bundle;
-
-import com.example.xyzreader.model.Article;
+import com.example.xyzreader.remote.Article;
 
 import java.util.ArrayList;
 
