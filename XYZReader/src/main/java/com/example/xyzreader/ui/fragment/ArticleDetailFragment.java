@@ -39,7 +39,7 @@ public class ArticleDetailFragment extends Fragment {
         public void onClick(View v) {
             startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
                     .setType("text/plain")
-                    .setText("Some sample text")
+                    .setText(getString(R.string.action_share_text, mArticle.title))
                     .getIntent(), getString(R.string.action_share)));
         }
     };
